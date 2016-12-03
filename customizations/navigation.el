@@ -17,7 +17,7 @@
 (setq recentf-save-file (concat user-emacs-directory ".recentf"))
 (require 'recentf)
 (recentf-mode 1)
-(setq recentf-max-menu-items)
+(setq recentf-max-menu-items nil)
 
 
 ;; ido-mode allows you to more easily navigate choices. For example,

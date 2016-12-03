@@ -78,6 +78,8 @@
     ensime
 
     clj-refactor
+
+    undo-tree
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -148,7 +150,6 @@
 (tool-bar-mode -1)
 
 (require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 (add-hook 'scala-mode-hook 'subword-mode)
 
 (require 'py-autopep8)
@@ -162,4 +163,21 @@
 
 (global-company-mode)
 
+(global-undo-tree-mode)
+
 (eldoc-mode)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(package-selected-packages
+   (quote
+    (kibit-helper highlight-symbol groovy-mode gradle-mode yaml-mode terraform-mode tagedit smex rainbow-delimiters py-autopep8 projectile markdown-mode magit ido-ubiquitous helm go-mode feature-mode exec-path-from-shell ensime clojure-mode-extra-font-locking clj-refactor auto-complete android-mode))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

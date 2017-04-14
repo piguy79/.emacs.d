@@ -78,8 +78,6 @@
     ensime
 
     clj-refactor
-
-    undo-tree
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -162,8 +160,6 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (global-company-mode)
-
-(global-undo-tree-mode)
 
 (eldoc-mode)
 (custom-set-variables
